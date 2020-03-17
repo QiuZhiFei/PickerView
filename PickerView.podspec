@@ -30,6 +30,7 @@ s.source           = { :git => "https://github.com/filipealva/PickerView.git", :
 
 s.platform     = :ios, '8.0'
 s.requires_arc = true
+s.swift_versions = ['5.0']
 
 s.source_files = 'Pod/Classes/**/*'
 #s.resource_bundles = {

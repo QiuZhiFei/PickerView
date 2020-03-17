@@ -77,7 +77,7 @@ class ExamplePickerViewController: UIViewController {
             examplePicker.scrollingStyle = scrollingStyle
             examplePicker.selectionStyle = selectionStyle
             
-            if let currentSelected = currentSelectedValue, let indexOfCurrentSelectedValue = numbers.index(of: currentSelected) {
+            if let currentSelected = currentSelectedValue, let indexOfCurrentSelectedValue = numbers.firstIndex(of: currentSelected) {
                 examplePicker.currentSelectedRow = indexOfCurrentSelectedValue
             }
         case let .names(scrollingStyleRaw, selectionStyleRaw):
@@ -87,7 +87,7 @@ class ExamplePickerViewController: UIViewController {
             examplePicker.scrollingStyle = scrollingStyle
             examplePicker.selectionStyle = selectionStyle
             
-            if let currentSelected = currentSelectedValue, let indexOfCurrentSelectedValue = osxNames.index(of: currentSelected) {
+            if let currentSelected = currentSelectedValue, let indexOfCurrentSelectedValue = osxNames.firstIndex(of: currentSelected) {
                 examplePicker.currentSelectedRow = indexOfCurrentSelectedValue
             }
         }
